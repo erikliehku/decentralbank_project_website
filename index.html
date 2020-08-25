@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Decentral Bank</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
+  <style>
+    .menu-index {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu-container"></div>
+  <div class="content-container">
+    <div class="content">
+      <div class="content-table flex-column">
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Intro-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <img class="image" src="img/logo2.png">
+          </div>
+          <div class="flex-item flex-column">
+            <p class="text text-large">
+              <a target="_blank" href="https://erikliehku.github.io/">Erik Lie</a>, eriklie@connect.hku.hk<br>
+              <a target="_blank" href="https://www.hku.hk/">The University of Hong Kong</a><br>
+              <a target="_blank" href="https://www.google.com.hk/maps/place/Pok+Fu+Lam/@22.2608807,114.1322448,16z/data=!3m1!4b1!4m5!3m4!1s0x3403ffed99e97bd3:0xa00c396826271b0!8m2!3d22.2679201!4d114.1290719?hl=en">Pokfulam, Hong Kong</a>
+            </p>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin">Overview</h2>
+            <hr>
+            <p class="text add-top-margin">
+              Decentralized Finance (DeFi) emerging on Ethereum is showing promising result towards during a disintermediated financial system. But most protocols exist today lack a systematic way for managing risk and handling system insolvency. In this paper, we will discuss what is the common pitfall for solvency management in DeFi nowdays, and proposed that some constraints can be relieved. We will use balance sheet as tool, and explain how coverage ratio and quick ratio can be used for risk assessment of the system. Lastly, we will combine all these and propose a protocol that can unify all DeFi protocols (including but not limited to: token swapping, borrowing, portfolio management) into one system and thereby significantly increase capital efficiency.
+            </p>
+            <p class="text add-top-margin">
+              For this dissertation, we would like to construct <a href="https://jovial-albattani-12554d.netlify.app/#/">Decentral Bank</a> - an autonomous financial protocol constructed on public, decentralized blockchain (i.e.: Ethereum for now).
+            </p>
+          </div>
+        </div>
+        <!--End Intro-->
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Text Only-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h3>Literature Review</h3>
+            <p class="text">
+              Existing DeFi protocols can be boardly be classified into Token Swapper (Uniswap <a href="reference#ref1">[1]</a>, Balancer <a href="reference#ref2">[2]</a> and Curve.fi <a href="reference#ref3">[3]</a>), Money Market (Compound <a href="reference#ref4">[4]</a> and Aave <a href="reference#ref5">[5]</a>), Portfolio Management (Token Set <a href="reference#ref6">[6]</a>).
+            </p>
+            <p class="text">
+              Theorotical development is needed as the protocol doesn't use Constant Function Market Maker <a href="reference#ref7">[7]</a> for token swapping.
+            <h3>Proposed methodology</h3>
+            <p class="text">
+              We will use balance sheet as tool, and explain how coverage ratio and quick ratio can be used for risk assessment of the system, eventually unify all DeFi protocols (including but not limited to: token swapping, money market, portfolio management) into one system and thereby significantly increase capital efficiency.
+            </p>
+          </div>
+        </div>
+        <!--End Text Only-->
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Text with Centered Image and Table-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin">Milestones</h2>
+            <hr>
+            <div class="custom-table-container center add-top-margin-small">
+              <table class="custom-table">
+                <thead>
+                  <tr class="bg-color-gray">
+                    <th>#</th>
+                    <th class="text-center">Tasks</th>
+                    <th class="text-center">Est. completion time</th>
+                    <th class="text-center">Est. learning hours</th>
+                    <th class="text-center">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td class="text-center">Literature Review + Project Website</td>
+                    <td class="text-center">Jun 2020</td>
+                    <td class="text-center">50</td>
+                    <td class="text-center">Completed</td>
+                  </tr>
+                  <tr class="bg-color-light-gray">
+                    <td>2</td>
+                    <td class="text-center">System Design</td>
+                    <td class="text-center">Jul 2020</td>
+                    <td class="text-center">100</td>
+                    <td class="text-center">Completed</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td class="text-center">Slippage Function Construction</td>
+                    <td class="text-center">Aug 2020</td>
+                    <td class="text-center">100</td>
+                    <td class="text-center">In Progress</td>
+                  </tr>
+                  <tr class="bg-color-light-gray">
+                    <td>4</td>
+                    <td class="text-center">Smart Contract Risk Handling</td>
+                    <td class="text-center">Sep 2020</td>
+                    <td class="text-center">100</td>
+                    <td class="text-center">Not started</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td class="text-center">Simulation</td>
+                    <td class="text-center">Oct 2020</td>
+                    <td class="text-center">200</td>
+                    <td class="text-center">Not started</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td class="text-center">Final report</td>
+                    <td class="text-center">Mar 2021</td>
+                    <td class="text-center">50</td>
+                    <td class="text-center">Not started</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!--End Text with Centered Image and Table-->
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
